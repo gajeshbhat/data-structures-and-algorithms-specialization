@@ -4,11 +4,6 @@
 
 using namespace std;
 
-template<typename HP>
-int hoare_partition(std::vector<HP> &values,HP start_idx,HP end_idx){
-
-}
-
 template<typename LP>
 int lomuto_partition(std::vector<LP> &values,LP start_idx,LP end_idx){
   LP idx = start_idx;
