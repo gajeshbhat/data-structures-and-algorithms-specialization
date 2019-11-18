@@ -1,3 +1,5 @@
+/*Fails on the last test case and uses Tarjans STrongly connected components method. Simple Kosarajus implemenation is in strongly_connected.py file */
+
 #include <algorithm>
 #include <iostream>
 #include <vector>

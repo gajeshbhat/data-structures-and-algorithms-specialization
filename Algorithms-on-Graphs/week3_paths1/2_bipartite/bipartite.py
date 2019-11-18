@@ -1,20 +1,20 @@
-#Uses python3
+# Uses python3
 
 import sys
-import queue
 
-def bipartite(adj):
-    #write your code here
-    return -1
+sys.setrecursionlimit(200000)
+
+def number_of_strongly_connected_components(adj):
+    return 0
+
 
 if __name__ == '__main__':
-    input = sys.stdin.read()
-    data = list(map(int, input.split()))
+    user_input = sys.stdin.read()
+    data = list(map(int, user_input.split()))
     n, m = data[0:2]
     data = data[2:]
     edges = list(zip(data[0:(2 * m):2], data[1:(2 * m):2]))
     adj = [[] for _ in range(n)]
     for (a, b) in edges:
         adj[a - 1].append(b - 1)
-        adj[b - 1].append(a - 1)
-    print(bipartite(adj))
+    print(number_of_strongly_connected_components(adj))
